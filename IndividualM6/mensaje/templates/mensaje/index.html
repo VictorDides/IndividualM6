@@ -1,0 +1,9 @@
+{% extends "mensaje/base.html" %}
+{% block contenido %}
+    <h1>Pagina Principal Individual M6 Victor Dides</h1>
+    {% for usuario in usuarios %}
+        <h2> {{usuario.nombre}} </h2>
+        <h3> {{usuario.edad}} </h3>
+        <p> {{usuario.mail}} </p>
+    {% endfor %}
+    {% endblock %}

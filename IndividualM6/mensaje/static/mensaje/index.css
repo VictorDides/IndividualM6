@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c3bfc2;
+    margin-left: 20px;
+}
+
+  /* Estilos para los encabezados */
+h1 {
+    color: #046538;
+    font-size: 24px;
+}
