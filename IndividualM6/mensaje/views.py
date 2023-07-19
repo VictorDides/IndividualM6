@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .forms import NuevoForm
 
 usuarios = [
     {
@@ -37,3 +38,7 @@ def home(request):
         'usuarios': usuarios
     }
     return render(request,'mensaje/index.html', contexto)
+
+def crearFormulario(request):
+    form = NuevoForm()
+    return render(request,"mensaje/formulario.html",{'form':form})
