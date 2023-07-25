@@ -10,7 +10,7 @@ class Publicacion(models.Model):
     direccion = models.CharField(max_length=254)
 
 
-class Tweet(models.Model):
+class Formulario1(models.Model):
     cuerpo = models.TextField(max_length=250)
     fecha = models.DateTimeField(default= timezone.now)
 # Create your models here.

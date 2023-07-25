@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_REDIRECT_URL = 'mensaje_bienvenida'
+LOGIN_URL = 'login'
 
 # Application definition
 
@@ -38,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mensaje.apps.MensajeConfig',
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
